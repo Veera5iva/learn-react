@@ -1,0 +1,4 @@
+./00_basic_react/node_modules/
+./00_basic_vite/node_modules/
+./02_counter/node_modules/
+./03_tailwind_props/node_modules/
