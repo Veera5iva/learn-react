@@ -2,3 +2,4 @@
 ./00_basic_vite/node_modules/
 ./02_counter/node_modules/
 ./03_tailwind_props/node_modules/
+./04_bg_changer/node_modules/
