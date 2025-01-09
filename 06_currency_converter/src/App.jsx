@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import {InputBox} from './components/index.js'
 import useCurrencyInfo from './hooks/useCurrencyInfo';
@@ -19,6 +19,10 @@ function App() {
       setAmount(convertedAmount);
       setConvertedAmount(amount);
     }
+
+    useEffect(() => {
+      setConvertedAmount(amount * currencyInfo[to]);
+    }, [amount, currencyInfo, to, from])
   
   const convert = () => setConvertedAmount(amount * currencyInfo[to]);
 
